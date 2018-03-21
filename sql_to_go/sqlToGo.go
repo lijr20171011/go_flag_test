@@ -192,7 +192,7 @@ func GetDBTableStruct(host, user, pwd, dbName, tableName string, writeFile bool)
 	structStr += "}\n"
 	if writeFile {
 		// 写入文件
-		headInfo := "package " + tableName + "\n"
+		headInfo := "package models" + "\n"
 		if hasTime {
 			headInfo += "\nimport(\n\t" + `"time"` + "\n)\n"
 		}

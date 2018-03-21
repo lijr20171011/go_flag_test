@@ -34,7 +34,6 @@ func main() {
 // flag包
 func sqltogo1() {
 	var dbName, tableName, host, user, pwd string
-	// test := flag.String("test", "test1", "test2")
 	var writeFile bool
 	{ // 库名
 		flag.StringVar(&dbName, "db", "ljr", "数据库库名")
